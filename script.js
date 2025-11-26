@@ -71,6 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Update Page Title
     document.title = `${profileData.name} | Portfolio`;
     document.getElementById('nav-logo').textContent = 'A_K_A_THE_KAASH';
+	document.getElementById('nav-logo').href = `mailto:${profileData.contact.email}`;
 
     // Hero Section
     document.getElementById('hero-name').textContent = profileData.name;
