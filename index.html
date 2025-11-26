@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div id="scroll-progress"></div>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo" id="nav-logo">Portfolio</a>
+                <div class="nav-links">
+                    <a href="#about">About</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#certifications">Certifications</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="container hero-content">
+                <span class="hero-subtitle">Hello, I'm</span>
+                <h1 id="hero-name">Loading...</h1>
+                <h2 id="hero-title">Loading...</h2>
+                <p id="hero-bio">Loading...</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                    <a href="#projects" class="btn btn-secondary">View Work</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2><i class="fa-solid fa-user"></i> About Me</h2>
+                <p id="about-text">Loading...</p>
+            </div>
+        </section>
+
+        <section id="experience">
+            <div class="container">
+                <h2><i class="fa-solid fa-briefcase"></i> Experience</h2>
+                <div class="grid" id="experience-grid">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <h2><i class="fa-solid fa-code"></i> Featured Projects</h2>
+                <div class="grid" id="projects-grid">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="container">
+                <h2><i class="fa-solid fa-screwdriver-wrench"></i> Skills</h2>
+                <div class="skills-grid" id="skills-grid">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications">
+            <div class="container">
+                <h2><i class="fa-solid fa-certificate"></i> Certifications</h2>
+                <div class="grid" id="certifications-grid">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <div class="container">
+                <h2><i class="fa-solid fa-graduation-cap"></i> Education</h2>
+                <div class="grid" id="education-grid">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container contact">
+                <h2><i class="fa-solid fa-paper-plane"></i> Let's Connect</h2>
+                <p>I'm always open to discussing new projects, creative ideas or opportunities to be part of your
+                    visions.</p>
+                <div class="social-links" id="social-links">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> <span id="footer-name"></span>. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="profile-data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
