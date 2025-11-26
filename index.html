@@ -6,12 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
     <div id="scroll-progress"></div>
+
+    <!-- Fixed Sidebars -->
+    <div class="side-element left">
+        <ul class="social-list" id="side-socials">
+            <!-- Populated by JS -->
+        </ul>
+    </div>
+    <div class="side-element right">
+        <div class="email-wrapper">
+            <a href="mailto:hello@example.com" id="side-email">hello@example.com</a>
+        </div>
+    </div>
+
     <header>
         <div class="container">
             <nav>
@@ -31,36 +44,73 @@
     <main>
         <section id="hero" class="hero">
             <div class="container hero-content">
-                <span class="hero-subtitle">Hello, I'm</span>
-                <h1 id="hero-name">Loading...</h1>
-                <h2 id="hero-title">Loading...</h2>
+                <span class="hero-subtitle">HEY THERE!</span>
+                <h1 id="hero-name" class="gradient-text">Loading...</h1>
+                <h2 id="hero-title" style="font-size: 1.8rem; text-align: left; margin-bottom: 1rem; font-weight: 400;">
+                    Loading...</h2>
                 <p id="hero-bio">Loading...</p>
+
+                <div class="social-icons-hero" id="social-icons-hero">
+                    <!-- Populated by JS -->
+                </div>
+
                 <div class="cta-buttons">
                     <a href="#contact" class="btn btn-primary">Get in Touch</a>
                     <a href="#projects" class="btn btn-secondary">View Work</a>
+                </div>
+
+                <div class="stats-section">
+                    <div class="stat-item">
+                        <span class="stat-number" id="stat-experience">7+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="stat-projects">20+</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="stat-certs">6</span>
+                        <span class="stat-label">Certifications</span>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="about">
             <div class="container">
-                <h2><i class="fa-solid fa-user"></i> About Me</h2>
-                <p id="about-text">Loading...</p>
+                <h2 class="gradient-text">About Me</h2>
+                <div class="about-inner">
+                    <div class="about-text">
+                        <p id="about-text">Loading...</p>
+                    </div>
+                    <div class="about-pic">
+                        <div class="photo-container">
+                            <i class="fa-solid fa-user-astronaut"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section id="experience">
             <div class="container">
-                <h2><i class="fa-solid fa-briefcase"></i> Experience</h2>
-                <div class="grid" id="experience-grid">
-                    <!-- Populated by JS -->
+                <h2 class="gradient-text">Where I've Worked</h2>
+                <div class="inner">
+                    <div class="tabs-container">
+                        <div class="tabs-list" id="jobs-tabs">
+                            <!-- Populated by JS -->
+                        </div>
+                        <div class="tabs-panels" id="jobs-content">
+                            <!-- Populated by JS -->
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="projects">
             <div class="container">
-                <h2><i class="fa-solid fa-code"></i> Featured Projects</h2>
+                <h2 class="gradient-text">Some Things I've Built</h2>
                 <div class="grid" id="projects-grid">
                     <!-- Populated by JS -->
                 </div>
@@ -69,7 +119,7 @@
 
         <section id="skills">
             <div class="container">
-                <h2><i class="fa-solid fa-screwdriver-wrench"></i> Skills</h2>
+                <h2 class="gradient-text">Skills & Expertise</h2>
                 <div class="skills-grid" id="skills-grid">
                     <!-- Populated by JS -->
                 </div>
@@ -78,7 +128,7 @@
 
         <section id="certifications">
             <div class="container">
-                <h2><i class="fa-solid fa-certificate"></i> Certifications</h2>
+                <h2 class="gradient-text">Certifications</h2>
                 <div class="grid" id="certifications-grid">
                     <!-- Populated by JS -->
                 </div>
@@ -87,7 +137,7 @@
 
         <section id="education">
             <div class="container">
-                <h2><i class="fa-solid fa-graduation-cap"></i> Education</h2>
+                <h2 class="gradient-text">Education</h2>
                 <div class="grid" id="education-grid">
                     <!-- Populated by JS -->
                 </div>
@@ -96,11 +146,15 @@
 
         <section id="contact">
             <div class="container contact">
-                <h2><i class="fa-solid fa-paper-plane"></i> Let's Connect</h2>
-                <p>I'm always open to discussing new projects, creative ideas or opportunities to be part of your
-                    visions.</p>
+                <h2 class="gradient-text">What's Next?</h2>
+                <h1 style="font-size: 3rem; margin-bottom: 1rem;">Get In Touch</h1>
+                <p>I'm currently looking for new opportunities and exciting projects. Whether you have a question or
+                    just want to say hi, I'll try my best to get back to you!</p>
                 <div class="social-links" id="social-links">
                     <!-- Populated by JS -->
+                </div>
+                <div style="margin-top: 3rem;">
+                    <a href="mailto:hello@example.com" class="btn btn-primary" id="mail-btn">Say Hello</a>
                 </div>
             </div>
         </section>
@@ -108,7 +162,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; <span id="year"></span> <span id="footer-name"></span>. All rights reserved.</p>
+            <p>&copy; <span id="year"></span> <span id="footer-name"></span>. Built with 💜</p>
         </div>
     </footer>
 
